@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div className="w-full mt-24 bg-slate-500 text-gray-300 py-y px-2">
+    <div className="w-full mt-10 bg-slate-500 text-gray-300 py-y px-2">
       <div className="max-w-[1240px] mx-auto border-b-2 border-gray-600 py-6">
         <div className='flex flex-wrap justify-around'>
           

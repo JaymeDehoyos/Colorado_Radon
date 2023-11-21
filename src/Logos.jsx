@@ -4,20 +4,20 @@ import NRPP from "./assets/NRPP.png";
 
 const Logos = () => {
   return (
-    <div className="mx-auto items-center">
-
+    <div className="mx-auto mt-10 items-center">
       <div className="flex gap-8">
-        <img className="h-20 w-auto" 
-            href="#https://aarst.org"
-            src= {AARST}
-            alt="AARST"
-          />
-          <img 
-          className="h-20 w-auto" 
+        <img 
+          href="#https://aarst.org"
+          className="h-20 w-auto hover:opacity-80 duration-150" 
+          src= {AARST}
+          alt="AARST"
+        />
+        <img 
           href="#https://nrpp.info"
+          className="h-20 w-auto hover:opacity-80 duration-150" 
           src= {NRPP}
           alt="NRPP"
-            />
+        />
       </div>
     </div>
   )
