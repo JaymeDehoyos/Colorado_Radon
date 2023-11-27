@@ -8,7 +8,7 @@ export default {
       }
     },
     fontFamily: {
-      sans: ['Montserrat', 'sans-serif'],
+      sans: ['Roboto Condensed', 'sans-serif'],
     }
   },
   plugins: [],

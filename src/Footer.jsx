@@ -2,8 +2,8 @@
 
 const Footer = () => {
   return (
-    <div className="w-full mt-10 bg-slate-500 text-gray-300 py-y px-2">
-      <div className="max-w-[1240px] mx-auto border-b-2 border-gray-600 py-6">
+    <div className="w-full mt-10 bg-red-900 text-white py-y px-2">
+      <div className="max-w-[1240px] mx-auto border-b-2 border-black py-6">
         <div className='flex flex-wrap justify-around'>
           
          <div className="font-bold py-4">
@@ -27,7 +27,7 @@ const Footer = () => {
               <input className='p-2 mr-4 rounded-md mb-4' type='email' placeholder='Email'></input>
               <input className='p-2 mr-4 rounded-md mb-4' type='address' placeholder='Address'></input>
               <textarea className='resize rounded-md'>Message</textarea>
-              <button className='p-2 mb-4  hover:text-red-500 hover:opacity-80 duration-150'>Send</button>
+              <button className='p-2 mb-4  hover:text-black hover:opacity-80 duration-150'>Send</button>
             </form>
           </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
           <p className='py-4'>© Copyright 2023 - All Rights Reserved </p>
 
           <div className="flex -mx-6">
-            <a href="#" className="mx-3 hover:opacity-80 duration-150" >Powered By Jayme DeHoyos</a>
+            <a href="#" className="mx-3 hover:text-black hover:opacity-80 duration-150" >Powered By Jayme DeHoyos</a>
           </div>
         </div>
     </div>

@@ -21,7 +21,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#home" className="flex items-center hover:text-red-500 transition-colors">
+        <a href="#home" className="flex items-center hover:text-black transition-colors">
           Home
         </a>
       </Typography>
@@ -31,7 +31,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#radon" className="flex items-center hover:text-red-500 transition-colors">
+        <a href="#radon" className="flex items-center hover:text-black transition-colors">
           What is Radon?
         </a>
       </Typography>
@@ -41,7 +41,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#speicals" className="flex items-center hover:text-red-500 transition-colors">
+        <a href="#speicals" className="flex items-center hover:text-black transition-colors">
           Specials
         </a>
       </Typography>
@@ -51,7 +51,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#contact" className="flex items-center hover:text-red-500 transition-colors">
+        <a href="#contact" className="flex items-center hover:text-black transition-colors">
           Contact Us
         </a>
       </Typography>
@@ -74,11 +74,12 @@ export default function Nav() {
   }, []);
  
   return (
-    <Navbar className="sticky top-0 z-10 h-max max-w-full bg-gray-500 border-transparent rounded-none px-4 py-2 lg:px-8 lg:py-4">
+    <Navbar className="sticky top-0 z-10 h-max max-w-full bg-red-900 border-transparent rounded-none px-4 py-2 lg:px-8 lg:py-4">
       <div className="flex items-center w-full justify-between text-white">
+
         <Typography
           as="a"
-          href="#"
+          href="#home"
           variant="gradient"
           className="mr-4 cursor-pointer py-1.5"
         >
