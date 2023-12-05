@@ -1,6 +1,6 @@
 import { useState } from "react";
-// import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-// import { RxDotFilled } from "react-icons/rx";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 
 const Reviews = () => {
   const slides = [
@@ -58,7 +58,7 @@ const Reviews = () => {
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
           >
-            {/* <RxDotFilled /> */}
+            <RxDotFilled />
           </div>
         ))}
       </div>
