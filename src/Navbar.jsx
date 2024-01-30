@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Radon from './assets/Radon.jpg'
+import { Link } from 'react-router-dom';
 
 
  
@@ -21,9 +22,9 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#home" className="flex items-center hover:text-black transition-colors">
+        <Link to="/home" className="flex items-center hover:text-black transition-colors">
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -31,9 +32,9 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#radon" className="flex items-center hover:text-black transition-colors">
+        <Link to="/about" className="flex items-center hover:text-black transition-colors">
           What is Radon?
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -41,9 +42,9 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#speicals" className="flex items-center hover:text-black transition-colors">
+        <Link to="/speicals" className="flex items-center hover:text-black transition-colors">
           Specials
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -51,9 +52,9 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#contact" className="flex items-center hover:text-black transition-colors">
+        <Link to="/contact" className="flex items-center hover:text-black transition-colors">
           Contact Us
-        </a>
+        </Link>
       </Typography>
     </ul>
   );

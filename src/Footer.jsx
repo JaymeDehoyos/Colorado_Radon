@@ -1,5 +1,4 @@
 
-
 const Footer = () => {
   return (
     <div className="w-full mt-10 bg-red-900 text-white py-y px-2">
@@ -34,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto p-6 flex flex-col md:flex-row items-center justify-between">
-          <p className='py-4'>© Copyright 2023 - All Rights Reserved </p>
+          <p className='py-4'>© Copyright 2024 - All Rights Reserved </p>
 
           <div className="flex -mx-6">
             <a href="#" className="mx-3 hover:text-black hover:opacity-80 duration-150" >Powered By Jayme DeHoyos</a>

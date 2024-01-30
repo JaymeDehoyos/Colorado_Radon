@@ -1,20 +1,25 @@
 import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { Safe } from "./assets/safe_reviews.jpg";
+import { ReviewPic } from "./assets/review_pic.jpg";
+import { Homes } from "./assets/colorado_homes2.jpg";
 
 const Reviews = () => {
   const slides = [
     {
-      url: 'https://unsplash.com/photos/heart-marker-print-0ZQ8vojHNuc',
-      title: 'Love'
+      
+      src: { Safe },
+      alt: 'Safe'
+      
     },
     {
-      url: 'https://unsplash.com/photos/yellow-family-sign-KhStXRVhfog',
-      title: 'Family'
+      src: { ReviewPic },
+      alt: 'Family'
     },
     {
-      url: 'https://unsplash.com/photos/white-and-red-wooden-house-miniature-on-brown-table-rgJ1J8SDEAY',
-      title: 'SafeHome'
+      src: { Homes },
+      alt: 'Homes'
     }
   ];
 
