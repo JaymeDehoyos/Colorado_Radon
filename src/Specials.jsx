@@ -8,7 +8,7 @@ function Specials() {
 
     <div>
       <Navbar />
-      <div className="max-w-[1400px] m-auto py-16 px-4 items-center">
+      <div className="max-w-[640px] m-auto py-16 px-28 items-center">
       <img 
               className= "flex rounded-xl"
               src= {SpecialsR}
