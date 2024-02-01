@@ -1,6 +1,6 @@
 import Navbar from "/src/Navbar.jsx";
 import Leblanc from "./assets/leblanc photo.jpg.jpeg";
-import Footer from "/src/Footer.jsx";
+
 
 function Contact() {
   return (
@@ -43,7 +43,7 @@ function Contact() {
         <div className='justify-center col-span-2 pt-8 md:pt-2'>
             <p className='text-center text-4xl font-bold uppercase'>Contact Us</p>
             <p className="text-center p-4 py-4">Have questions? Feel free to contact us by calling or texting (720) 454-8388 or filling out the contact form. 
-            We will call you back as soon as possible. Email: </p>
+            We will call you back as soon as possible. Email: info@coloradoradontests.com </p>
             <form className='flex flex-col p-4 m-auto w-96 justify-center'>
               <input className='p-4 mr-2 rounded-md mb-6' type='name' placeholder='Name'></input>
               <input className='p-4 mr-2 rounded-md mb-6' type='phone' placeholder='Phone Number'></input>
@@ -53,7 +53,32 @@ function Contact() {
               <button className='p-4 mb-6  hover:text-black hover:opacity-80 duration-150 rounded-l'>Send</button>
             </form>
           </div>
-          <Footer />
+          <div className="w-full mt-10 bg-red-900 text-white py-y px-2">
+      <div className="max-w-[1240px] mx-auto border-b-2 border-black py-6">
+        <div className='flex flex-wrap justify-around'>
+          
+         <div className="font-bold py-4">
+          <p className='font-bold uppercase py-4'>EMAIL</p>
+          <ul>
+            <li className='py-1'>info@coloradoradontests.com</li>
+
+          </ul>
+          <p className='font-bold uppercase py-4'>HOURS</p>
+            <ul>
+              <li className='py-1'>Monday - Friday: 9AM - 5PM</li>
+              <li className='py-1'>Saturday & Sunday: CLOSED</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto p-6 flex flex-col md:flex-row items-center justify-between">
+          <p className='py-4'>© Copyright 2024 - All Rights Reserved </p>
+
+          <div className="flex -mx-6">
+            <a href="#" className="mx-3 hover:text-black hover:opacity-80 duration-150" >Powered By Jayme DeHoyos</a>
+          </div>
+        </div>
+    </div>
     </div>
   )
 }
