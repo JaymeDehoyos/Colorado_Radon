@@ -1,12 +1,10 @@
-import Navbar from "/src/Navbar.jsx";
 import Footer from "/src/Footer.jsx";
 // import radon_home from "./assets/radon_home.jpg"
-import Rn from "./assets/Rn.jpg"
+import Rn from "../../../assets/Rn.jpg";
 
 function About() {
   return (
     <div>
-      <Navbar />
       <div className="my-32 mt-10">
         <div>
           <h2 className="text-6xl font-bold text-center">What is Radon?</h2>
@@ -39,7 +37,6 @@ function About() {
       </div>
       <Footer />
     </div>
-
   )
 }
 

@@ -1,12 +1,9 @@
-import Navbar from "/src/Navbar.jsx";
-import Leblanc from "./assets/leblanc photo.jpg.jpeg";
-
+import Leblanc from "../../../assets/leblanc photo.jpeg";
 
 function Contact() {
   return (
 
     <div>
-      <Navbar/>
       <div className="grid md:grid-cols-2 gap-1 px-1 text-center">
         <div className="rounded-xl py-16">
       <img 
