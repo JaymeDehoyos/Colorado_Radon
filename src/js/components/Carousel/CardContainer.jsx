@@ -6,7 +6,7 @@ import { Typography, Rating } from '@material-tailwind/react';
 function CardContainer({children, name, rating=0}) {
   return (
     <div className="relative h-full w-full">
-      <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+      <div className="absolute inset-0 grid h-full w-full place-items-center">
         <div className="w-3/4 text-center md:w-2/4">
           <div className="flex justify-between">
             <Typography

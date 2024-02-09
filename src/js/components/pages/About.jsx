@@ -8,21 +8,22 @@ function About() {
       <div className="my-32 mt-10">
         <div>
           <h2 className="text-6xl font-bold text-center">What is Radon?</h2>
-          <h2 className="text-3xl font-bold mt-10 px-16">Radon Gas</h2>
+          <br></br>
+          <h2 className="text-2xl font-semibold text-center">Call Today (720) 454-8388</h2>
+          <h2 className="text-3xl font-bold mt-6 px-16">Radon Gas</h2>
         </div>
-        {/* <hr className="h-px my-7 bg-gray-300 border-0 dark:bg-gray-700"></hr> */}
-        <div className="grid md:grid-cols-2 gap-1 px-1 mt-4 text-center">
+        <div className="max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4">
           <div>
             <a href="https://www.epa.gov/">
               <img
-                className='rounded-xl max-w-[640px] m-auto hover:opacity-80 duration-150'
+                className='rounded-xl max-w-[640px] hover:opacity-80 duration-150'
                 src={Rn}
                 alt="Radon Home"
               />
             </a>
           </div>
-          <div className="py-2 m-auto text-2xl mr-4 rounded-xl shadow-md">
-            <p className="text-xl">Radon is a radioactive gas that forms naturally from the earth when radioactive metals; uranium, thorium, or radium break down in rocks, soil and groundwater.</p>
+          <div className="rounded-xl shadow-xl flex flex-col justify-center text-center">
+            <p className="px-4 py-2 text-xl">Radon is a radioactive gas that forms naturally from the earth when radioactive metals; uranium, thorium, or radium break down in rocks, soil and groundwater.</p>
             <p className="text-xl">Radon exposer happens primarily from breathing radon in the air that comes up through cracks and gaps in the foundation of homes.</p>
             <br></br>
             <p className="text-xl font-bold">Radon cannot be seen, has no smell and no taste.</p>

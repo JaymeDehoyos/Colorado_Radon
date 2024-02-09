@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 function NavList() {
 
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 duration-150">
+    <ul className="w-full my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 duration-150">
       <Typography
         as="li"
         variant="medium"
@@ -77,7 +77,7 @@ export default function Nav() {
 
         <Typography
           as="a"
-          href="#home"
+          href="home"
           variant="gradient"
           className="mr-4 cursor-pointer py-1.5"
         >
@@ -103,8 +103,8 @@ export default function Nav() {
           )}
         </IconButton>
       </div>
-      <Collapse open={openNav}>
-        {/* <NavList /> */}
+      <Collapse className="hidden" open={openNav}>
+        <NavList />
       </Collapse>
     </Navbar>
   );
