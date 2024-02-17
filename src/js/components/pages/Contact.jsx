@@ -7,7 +7,8 @@ function Contact() {
   return (
 
     <div>
-      <h1 className="text-4xl mt-10 font-bold text-center">Don`t wait - Contact us today! (720) 454-8388</h1>
+      <h1 className="text-6xl mt-10 font-bold text-center">Contact Us</h1>
+      <h1 className="text-3xl text-center">(720) 454-8388</h1>
         <div className="py-14 px-1 text-center">
           <div className="py-16 mx-12 m-auto text-2xl mr-4 rounded-xl h-full shadow-md">
             <p>Holli and Jared have been Colorado residents for over 10 years. They have experience and are knowledgable

@@ -80,13 +80,13 @@ const Header = () => {
             <a href="https://www.affinityhomeinspections.com" className="mx-3 hover:text-red-500 hover:opacity-80 duration-150">Affinity Home Inspection</a>
           </div>
         </div>
-        <div className="my-20 mt-5 top-10 py-8 mx-12">
+        <div className="my-10 mt-5 top-10 py-8 mx-12">
           <h2 className="text-2xl font-semibold text-center">Reviews</h2>
           <a href="https://www.google.com/search?q=affinity+home+inspections&oq=a&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyEwgCEC4YgwEYxwEYsQMY0QMYgAQyBggDEEUYOTIGCAQQRRg7MhUIBRAuGCcYrwEYxwEYgAQYigUYjgUyEwgGEC4YgwEYxwEYsQMY0QMYgAQyEwgHEC4YgwEYxwEYsQMY0QMYgAQyBwgIEAAYjwIyBwgJEAAYjwLSAQkzNDcxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x876c979fb91fa8e1:0x7a601415f476db3f,1,,,," className="flex justify-center mx-3 hover:text-red-500 hover:optional-80 duration-150">Find more great reviews!</a>
           <hr className="h-px my-7 bg-gray-300 border-0 dark:bg-gray-700"></hr>
           <br></br>
           {
-            <Carousel className="rounded-xl gap-2">
+            <Carousel className="gap-2 mx-auto">
               {reviews.map((review, idx) => (
                 <CardContainer key={idx} name={review.name} rating={review.rating}>
                   {review.comment}
@@ -94,9 +94,8 @@ const Header = () => {
               ))}
             </Carousel>
           }
-          <br></br>
         </div>
-        <div className="flex justify-center mx-auto mt-60">
+        <div className="flex justify-center mx-auto mt-40">
           <div className="flex">
             <a href="https://nrpp.info">
               <img

@@ -6,7 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Radon from '../../../assets/Radon.jpg'
+import Radon from '../../../assets/Logo_CRT.png'
 import { Link } from 'react-router-dom';
 
 function NavList() {
@@ -82,7 +82,7 @@ export default function Nav() {
           className="mr-4 cursor-pointer py-1.5"
         >
           <img 
-          className="h-12 w-auto"
+          className="h-20 w-auto"
           src= {Radon}
           alt="Radon"
          />
