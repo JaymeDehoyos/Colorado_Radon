@@ -9,6 +9,24 @@ function Contact() {
     <div>
       <h1 className="text-6xl mt-10 font-bold text-center">Contact Us</h1>
       <h1 className="text-3xl text-center">(720) 454-8388</h1>
+        <div className="py-16 mx-12 px-1 grid md:grid-cols-2 gap-1 text-center">
+          <div className="flex flex-col py-8 rounded-xl shadow-xl">
+            <div className="flex justify-center gap-4">
+            <Avatar src={Holli} className="h-[60vh]" alt="avatar" size="md" />
+            </div>
+            <p className="text-2xl font-semibold">Holli</p>
+            <p className="">NRPP Cert. ID 113160-RMP</p>
+            <p className="">Colorado License: RME.0000251</p>
+          </div>
+          <div className="py-8 rounded-xl shadow-xl">
+          <div className="flex justify-center">
+            <Avatar src={Jared} className="h-[60vh]" alt="avatar" size="md"/>
+            </div>
+            <p className="text-2xl font-semibold">Jared</p>
+            <p className="">NRPP Cert. ID 113480-RMP</p>
+            <p className="">Colorado License: RME.0000362</p>
+          </div>
+        </div>
         <div className="py-14 px-1 text-center">
           <div className="py-16 mx-12 m-auto text-2xl mr-4 rounded-xl h-full shadow-md">
             <p>Holli and Jared have been Colorado residents for over 10 years. They have experience and are knowledgable
@@ -22,24 +40,6 @@ function Contact() {
             </p>
             <br></br>
             <p className="text-xl">PLEASE NOTE: We do NOT install radon mitigation systems. We have experience and resouces to guide you through getting a radon mitigation system installed if the radon test comes back about the EPA recommended guideline. </p>
-          </div>
-        </div>
-        <div className="py-16 mx-12 px-1 grid md:grid-cols-2 gap-1 text-center">
-          <div className="flex flex-col py-8 rounded-xl shadow-xl">
-            <div className="flex justify-center gap-4">
-            <Avatar src={Holli} alt="avatar" size="md" />
-            </div>
-            <p className="text-2xl font-semibold">Holli</p>
-            <p className="">NRPP Cert. ID 113160-RMP</p>
-            <p className="">Colorado License: RME.0000251</p>
-          </div>
-          <div className="py-8 rounded-xl shadow-xl">
-          <div className="flex justify-center">
-            <Avatar src={Jared} alt="avatar" size="md"/>
-            </div>
-            <p className="text-2xl font-semibold">Jared</p>
-            <p className="">NRPP Cert. ID 113480-RMP</p>
-            <p className="">Colorado License: RME.0000362</p>
           </div>
         </div>
         <hr className="h-px my-7 bg-gray-300 border-0 dark:bg-gray-700"></hr>
