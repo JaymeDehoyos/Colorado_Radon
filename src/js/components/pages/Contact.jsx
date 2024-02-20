@@ -8,7 +8,6 @@ function Contact() {
 
     <div>
       <h1 className="text-6xl mt-10 font-bold text-center">Contact Us</h1>
-      <h1 className="text-3xl text-center">(720) 454-8388</h1>
         <div className="py-16 mx-12 px-1 grid md:grid-cols-2 gap-1 text-center">
           <div className="flex flex-col py-8 rounded-xl shadow-xl">
             <div className="flex justify-center gap-4">

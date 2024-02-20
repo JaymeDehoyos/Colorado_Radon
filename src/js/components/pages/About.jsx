@@ -9,7 +9,6 @@ function About() {
         <div>
           <h2 className="text-6xl font-bold text-center">What is Radon?</h2>
           <br></br>
-          <h2 className="text-2xl font-semibold text-center">Call Today (720) 454-8388</h2>
           <h2 className="text-3xl font-bold mt-6 px-16">Radon Gas</h2>
         </div>
         <div className="max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4">
