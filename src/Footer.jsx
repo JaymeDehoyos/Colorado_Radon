@@ -1,48 +1,100 @@
 
 const Footer = () => {
+  const contactInfo = [
+    {
+      title: "Email",
+      items: ["info@coloradoradontests.com"],
+    },
+    {
+      title: "Hours",
+      items: [
+        "Monday - Friday: 9AM - 5PM",
+        "Saturday & Sunday: Closed",
+      ],
+    },
+  ];
+
+  const formFields = [
+    { type: "text", placeholder: "Name" },
+    { type: "tel", placeholder: "Phone Number" },
+    { type: "email", placeholder: "Email" },
+    { type: "text", placeholder: "Address" },
+  ];
+
   return (
-    <div className="w-full mt-10 bg-red-900 text-white py-y px-2">
-      <div className="max-w-[1240px] mx-auto border-b-2 border-black py-6">
-        <div className='flex flex-wrap justify-around'>
-          
-         <div className="font-bold py-4">
-          <p className='font-bold uppercase py-4'>EMAIL</p>
-          <ul>
-            <li className='py-1'>info@coloradoradontests.com</li>
-
-          </ul>
-          <p className='font-bold uppercase py-4'>HOURS</p>
-            <ul>
-              <li className='py-1'>Monday - Friday: 9AM - 5PM</li>
-              <li className='py-1'>Saturday & Sunday: CLOSED</li>
-            </ul>
-          </div>
-
-          <div className='col-span-2 pt-8 md:pt-2'>
-            <p className='font-bold uppercase py-4'>Contact Us</p>
-            <form className='flex flex-col w-80'>
-              <input className='p-2 mr-4 rounded-md mb-4' type='name' placeholder='Name'></input>
-              <input className='p-2 mr-4 rounded-md mb-4' type='phone' placeholder='Phone Number'></input>
-              <input className='p-2 mr-4 rounded-md mb-4' type='email' placeholder='Email'></input>
-              <input className='p-2 mr-4 rounded-md mb-4' type='address' placeholder='Address'></input>
-              <textarea className='resize rounded-md'>Message</textarea>
-              <button className='p-2 mb-4  hover:text-black hover:opacity-80 duration-150'>Send</button>
-            </form>
-          </div>
-
+    <footer className="bg-[#faf7f0] text-[#444444] py-12 px-6">
+      {/* Top Section */}
+      <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10">
+        
+        {/* Contact Info */}
+        <div className="space-y-6">
+          {contactInfo.map((section) => (
+            <div key={section.title}>
+              <h3
+                className="text-lg font-semibold uppercase tracking-wider"
+                style={{ color: "#b29982" }}
+              >
+                {section.title}
+              </h3>
+              <ul className="mt-2 space-y-1 text-[#666666]">
+                {section.items.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
+
+        {/* Contact Form */}
+        <div className="md:col-span-2">
+          <h3
+            className="text-lg font-semibold uppercase tracking-wider mb-4"
+            style={{ color: "#b29982" }}
+          >
+            Contact Us
+          </h3>
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {formFields.map((field, index) => (
+              <input
+                key={index}
+                type={field.type}
+                placeholder={field.placeholder}
+                className="p-3 rounded-md border border-[#ccc] bg-white text-[#444444] placeholder-[#999] focus:outline-none focus:ring-2"
+                style={{ focusRingColor: "#b29982" }}
+              />
+            ))}
+            <textarea
+              placeholder="Message"
+              className="md:col-span-2 p-3 rounded-md border border-[#ccc] bg-white text-[#444444] placeholder-[#999] focus:outline-none focus:ring-2 resize-none"
+              rows={4}
+              style={{ focusRingColor: "#b29982" }}
+            />
+            <button
+              type="submit"
+              className="md:col-span-2 py-3 font-semibold rounded-md text-white transition duration-200"
+              style={{ backgroundColor: "#b29982" }}
+            >
+              Send
+            </button>
+          </form>
+        </div>
+
       </div>
-      <div className="container mx-auto p-6 flex flex-col md:flex-row items-center justify-between">
-          <p className='py-4'>© Copyright 2024 - All Rights Reserved </p>
 
-          <div className="flex -mx-6">
-            <a href="#" className="mx-3 hover:text-black hover:opacity-80 duration-150" >Powered By Jayme DeHoyos</a>
-          </div>
-        </div>
-    </div>
-
-  )
-}
+      {/* Bottom Section */}
+      <div className="max-w-[1240px] mx-auto mt-12 border-t border-[#d6c9b9] pt-6 flex flex-col md:flex-row justify-between items-center text-[#666666] text-sm">
+        <p>© 2024 Colorado Radon Tests - All Rights Reserved</p>
+        <a
+          href="#"
+          className="mt-2 md:mt-0"
+          style={{ color: "#b29982" }}
+        >
+          Powered by Jayme DeHoyos
+        </a>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
 
