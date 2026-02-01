@@ -5,39 +5,88 @@ import Rn from "../../../assets/Rn.jpg";
 function About() {
   return (
     <div>
-      <div className="my-32 mt-10">
-        <div>
-          <h2 className="text-6xl font-bold text-center">What is Radon?</h2>
-          <br></br>
-          <h2 className="text-3xl font-bold mt-6 px-16">Radon Gas</h2>
+
+      {/* HERO */}
+      <div className="mt-20 text-center px-4">
+        <h1 className="text-5xl md:text-6xl font-bold">
+          What is Radon?
+        </h1>
+
+        <p className="mt-4 text-lg text-gray-600">
+          Learn why radon testing is important for your home and family
+        </p>
+      </div>
+
+      {/* CONTENT */}
+      <div className="max-w-[1400px] mx-auto py-16 px-6 grid lg:grid-cols-2 gap-10">
+
+        {/* IMAGE */}
+        <div className="flex items-center justify-center">
+          <a href="https://www.epa.gov/" target="_blank" rel="noreferrer">
+            <img
+              className="rounded-xl w-full max-w-[6000px] shadow-lg hover:opacity-90 transition"
+              src={Rn}
+              alt="Radon in Home"
+            />
+          </a>
         </div>
-        <div className="max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4">
-          <div>
-            <a href="https://www.epa.gov/">
-              <img
-                className='rounded-xl max-w-[640px] hover:opacity-80 duration-150'
-                src={Rn}
-                alt="Radon Home"
-              />
+
+        {/* TEXT CARD */}
+        <div className="rounded-xl shadow-xl p-8 flex flex-col justify-center space-y-4 text-center">
+
+          <h2 className="text-3xl font-bold mb-2">
+            Radon Gas
+          </h2>
+
+          <p className="text-lg">
+            Radon is a radioactive gas that forms naturally when uranium,
+            thorium, and radium break down in rocks, soil, and groundwater.
+          </p>
+
+          <p className="text-lg">
+            Exposure happens primarily by breathing radon that enters homes
+            through cracks and gaps in foundations.
+          </p>
+
+          <p className="text-lg font-semibold">
+            Radon has no smell, taste, or color.
+          </p>
+
+          <p className="text-lg">
+            Testing for radon is the only way to know the level in your home.
+          </p>
+
+          <p className="text-lg font-semibold">
+            Radon is the leading cause of lung cancer among non-smokers in the
+            United States.
+          </p>
+
+          <p className="text-lg">
+            EPA guidelines recommend mitigation when levels exceed 4.0 pCi/L.
+          </p>
+
+          <p className="text-lg">
+            We do not install mitigation systems, but we can help guide you to
+            trusted mitigation professionals if elevated levels are found.
+          </p>
+
+          {/* CTA */}
+          <div className="pt-4">
+            <a
+              href="/contact"
+              className="inline-block bg-yellow-400 px-6 py-2 rounded-md font-semibold hover:bg-yellow-500 transition"
+            >
+              Schedule a Radon Test
             </a>
           </div>
-          <div className="rounded-xl shadow-xl flex flex-col justify-center text-center">
-            <p className="px-4 py-2 text-xl">Radon is a radioactive gas that forms naturally from the earth when radioactive metals; uranium, thorium, or radium break down in rocks, soil and groundwater.</p>
-            <p className="text-xl">Radon exposer happens primarily from breathing radon in the air that comes up through cracks and gaps in the foundation of homes.</p>
-            <br></br>
-            <p className="text-xl font-bold">Radon cannot be seen, has no smell and no taste.</p>
-            <br></br>
-            <p className="text-xl">Testing for Radon is the only way to know the levels in your home.</p>
-            <p className="text-xl font-bold">Radon is the leading cause of lung cancer among nonsmokers in the United States.</p>
-            <p className="text-xl">The EPA guidelines recommend radon mitigation if the average radon level is over 4.0 pCi/L.</p>
-            <br></br>
-            <p className="text-xl">We do not install radon mitigation systems. We have experience and resouces to guide you through getting a radon mitigation system installed if the radon test comes back about the EPA recommended guideline. </p>
-          </div>
+
         </div>
       </div>
+
       <Footer />
+
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
