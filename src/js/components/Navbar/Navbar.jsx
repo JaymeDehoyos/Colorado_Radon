@@ -1,78 +1,84 @@
-import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Radon from '../../../assets/Logo_CRT.png'
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Logo from "../../../assets/Logo_CRT.png";
 
+const links = [
+  { name: "Home", path: "/" },
+  { name: "What is Radon?", path: "/about" },
+  { name: "Specials", path: "/specials" },
+  { name: "Contact", path: "/contact" },
+];
 
-function NavList() {
-  const linkClasses =
-    "flex items-center relative text-[#444444] transition-colors duration-200 hover:text-[#b29982]";
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
 
-  return (
-    <ul className="w-full my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      {[
-        { name: "Home", path: "/" },
-        { name: "What is Radon?", path: "/about" },
-        { name: "Specials", path: "/specials" },
-        { name: "Contact Us", path: "/contact" },
-      ].map((item) => (
-        <Typography as="li" variant="medium" className="p-1 font-medium" key={item.name}>
-          <Link to={item.path} className={linkClasses}>
-            {item.name}
-            <span
-              className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#b29982] transition-all duration-300"
-            ></span>
-          </Link>
-        </Typography>
-      ))}
-    </ul>
-  );
-}
-
-export default function Nav() {
-  const [openNav, setOpenNav] = React.useState(false);
-
-  const handleWindowResize = () => window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
+  useEffect(() => {
+    const onResize = () => window.innerWidth >= 1024 && setOpen(false);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, []);
 
   return (
-    <Navbar className="sticky top-0 z-10 h-max max-w-full bg-[#faf7f0] border-transparent rounded-none px-4 py-2 lg:px-8 lg:py-4 shadow-md">
-      <div className="flex items-center w-full justify-between">
+    <header className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-hairline">
+      <div className="max-w-[1180px] mx-auto px-5 md:px-7 h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <Typography as="a" href="/" variant="medium" className="mr-4 cursor-pointer py-1.5">
-          <img className="h-20 w-auto" src={Radon} alt="Radon" />
-        </Typography>
+        <Link to="/" className="flex items-center gap-3">
+          <img src={Logo} className="h-11 w-11 rounded-[10px]" alt="Colorado Radon Testing logo" />
+          <span className="font-head font-extrabold text-[18px] text-ink tracking-tight">
+            Colorado <span className="text-brandblue">Radon</span> Testing
+          </span>
+        </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden lg:block">
-          <NavList />
-        </div>
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-ink">
+          {links.map((l) => (
+            <Link key={l.name} to={l.path} className="hover:text-brandblue transition-colors">
+              {l.name}
+            </Link>
+          ))}
+        </nav>
 
-        {/* Mobile Menu Button */}
-        <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-[#444444] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
-          onClick={() => setOpenNav(!openNav)}
+        {/* Desktop CTA */}
+        <Link
+          to="/contact"
+          className="hidden lg:inline-flex items-center gap-2 bg-brandblue hover:bg-brandblued text-white font-head font-bold text-[15px] rounded-[10px] px-5 py-3 transition-colors shadow-[0_8px_20px_rgba(28,111,176,0.28)]"
         >
-          {openNav ? <XMarkIcon className="h-6 w-6" strokeWidth={2} /> : <Bars3Icon className="h-6 w-6" strokeWidth={2} />}
-        </IconButton>
+          Get a Free Quote
+        </Link>
+
+        {/* Mobile toggle */}
+        <button
+          className="lg:hidden text-ink"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+          {open ? <XMarkIcon className="h-7 w-7" /> : <Bars3Icon className="h-7 w-7" />}
+        </button>
       </div>
 
-      {/* Mobile Collapse Menu */}
-      <Collapse open={openNav} className="lg:hidden">
-        <NavList />
-      </Collapse>
-    </Navbar>
+      {/* Mobile menu */}
+      {open && (
+        <div className="lg:hidden border-t border-hairline px-5 py-4 flex flex-col gap-3 bg-white">
+          {links.map((l) => (
+            <Link
+              key={l.name}
+              to={l.path}
+              onClick={() => setOpen(false)}
+              className="text-ink font-medium py-1"
+            >
+              {l.name}
+            </Link>
+          ))}
+          <Link
+            to="/contact"
+            onClick={() => setOpen(false)}
+            className="mt-2 text-center bg-brandblue hover:bg-brandblued text-white font-head font-bold rounded-[10px] px-5 py-3 transition-colors"
+          >
+            Get a Free Quote
+          </Link>
+        </div>
+      )}
+    </header>
   );
 }
