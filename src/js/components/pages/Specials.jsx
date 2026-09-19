@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../../../Footer";
-import Coupon from "../../../assets/Radon_Testing.png";
+import Coupon from "../../../assets/Coupon.png"; 
 
 function Specials() {
   return (
@@ -21,7 +21,7 @@ function Specials() {
       {/* COUPON */}
       <section className="max-w-[900px] mx-auto py-14 md:py-16 px-5">
         <div className="bg-white border border-hairline rounded-[22px] p-4 md:p-6 shadow-[0_24px_50px_rgba(15,52,87,0.12)]">
-          <img src={Coupon.png} alt="$150 Radon Testing Special" className="w-full rounded-[14px]" />
+          <img src={Coupon} alt="$150 Radon Testing Special" className="w-full rounded-[14px]" />
         </div>
         <div className="text-center mt-10">
           <Link

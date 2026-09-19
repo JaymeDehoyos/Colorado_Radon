@@ -1,19 +1,5 @@
 
 const Footer = () => {
-  const contactInfo = [
-    {
-      title: "Email",
-      items: ["info@coloradoradontests.com"],
-    },
-    {
-      title: "Hours",
-      items: [
-        "Monday - Friday: 9AM - 5PM",
-        "Saturday & Sunday: Closed",
-      ],
-    },
-  ];
-
   const formFields = [
     { type: "text", placeholder: "Name" },
     { type: "tel", placeholder: "Phone Number" },
@@ -22,72 +8,70 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#faf7f0] text-[#444444] py-12 px-6">
-      {/* Top Section */}
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10">
-        
-        {/* Contact Info */}
-        <div className="space-y-6">
-          {contactInfo.map((section) => (
-            <div key={section.title}>
-              <h3
-                className="text-lg font-semibold uppercase tracking-wider"
-                style={{ color: "#b29982" }}
-              >
-                {section.title}
-              </h3>
-              <ul className="mt-2 space-y-1 text-[#666666]">
-                {section.items.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <footer className="bg-[#0b2740] text-[#c3d4e2] pt-16 pb-7">
+      <div className="max-w-[1180px] mx-auto px-5 md:px-7 grid md:grid-cols-[1fr_1.4fr] gap-12">
+        {/* Contact info */}
+        <div>
+          <div>
+            <h4 className="text-white font-head font-bold text-[14px] tracking-[0.08em] uppercase mb-3">
+              Email
+            </h4>
+            <p className="text-white text-[17px] font-semibold">info@coloradoradontests.com</p>
+          </div>
+          <div className="mt-7">
+            <h4 className="text-white font-head font-bold text-[14px] tracking-[0.08em] uppercase mb-3">
+              Hours
+            </h4>
+            <p className="text-[15px]">Monday & Friday: 9AM & 5PM</p>
+            <p className="text-[15px]">Saturday & Sunday: Closed</p>
+          </div>
+          <div className="mt-7">
+            <h4 className="text-white font-head font-bold text-[14px] tracking-[0.08em] uppercase mb-3">
+              Call or Text
+            </h4>
+            <a href="tel:7204548388" className="text-white text-[17px] font-semibold hover:text-teal transition-colors">
+              (720) 454-8388
+            </a>
+          </div>
         </div>
 
-        {/* Contact Form */}
-        <div className="md:col-span-2">
-          <h3
-            className="text-lg font-semibold uppercase tracking-wider mb-4"
-            style={{ color: "#b29982" }}
-          >
+        {/* Contact form */}
+        <div>
+          <h4 className="text-white font-head font-bold text-[14px] tracking-[0.08em] uppercase mb-4">
             Contact Us
-          </h3>
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {formFields.map((field, index) => (
+          </h4>
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+            {formFields.map((field, i) => (
               <input
-                key={index}
+                key={i}
                 type={field.type}
                 placeholder={field.placeholder}
-                className="p-3 rounded-md border border-[#ccc] bg-white text-[#444444] placeholder-[#999] focus:outline-none focus:ring-2"
-                style={{ focusRingColor: "#b29982" }}
+                className="bg-[#0f3253] border border-[#1d456b] text-[#eaf2f9] placeholder-[#8ba7c0] rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:border-teal"
               />
             ))}
             <textarea
               placeholder="Message"
-              className="md:col-span-2 p-3 rounded-md border border-[#ccc] bg-white text-[#444444] placeholder-[#999] focus:outline-none focus:ring-2 resize-none"
               rows={4}
-              style={{ focusRingColor: "#b29982" }}
+              className="md:col-span-2 bg-[#0f3253] border border-[#1d456b] text-[#eaf2f9] placeholder-[#8ba7c0] rounded-[10px] px-4 py-3 text-[15px] focus:outline-none focus:border-teal resize-none"
             />
             <button
               type="submit"
-              className="md:col-span-2 py-3 font-semibold rounded-md text-white transition duration-200"
-              style={{ backgroundColor: "#b29982" }}
+              className="md:col-span-2 bg-brandblue hover:bg-brandblued text-white font-head font-bold text-[16px] rounded-[10px] py-3.5 transition-colors"
             >
-              Send
+              Send Message
             </button>
           </form>
         </div>
-
       </div>
 
-      {/* Bottom Section */}
-      <div className="max-w-[1240px] mx-auto mt-12 border-t border-[#d6c9b9] pt-6 flex flex-col md:flex-row justify-between items-center text-[#666666] text-sm">
-        <p>© 2024 Colorado Radon Tests - All Rights Reserved</p>
+      {/* Bottom bar */}
+      <div className="max-w-[1180px] mx-auto px-5 md:px-7 mt-11 pt-6 border-t border-[#1d3d5a] flex flex-col md:flex-row justify-between items-center gap-2 text-[13.5px] text-[#8ba7c0]">
+        <p>& 2024 Colorado Radon Testing & All Rights Reserved</p>
         <a
-          href="#"
-          className="mt-2 md:mt-0"
-          style={{ color: "#b29982" }}
+          href="https://jaymedehoyos.github.io"
+          target="_blank"
+          rel="noreferrer"
+          className="text-[#9fc0dc] hover:text-white transition-colors"
         >
           Powered by Jayme DeHoyos
         </a>
@@ -97,4 +81,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
