@@ -1,7 +1,8 @@
+
 import { Link } from "react-router-dom";
 import Footer from "../../../Footer";
-import Coupon from "../../../assets/Coupon.png"; 
-
+import Coupon from "../../../assets/Coupon.png";
+ 
 function Specials() {
   return (
     <div>
@@ -17,7 +18,7 @@ function Specials() {
           Flat-rate, certified radon testing across the Front Range.
         </p>
       </section>
-
+ 
       {/* COUPON */}
       <section className="max-w-[900px] mx-auto py-14 md:py-16 px-5">
         <div className="bg-white border border-hairline rounded-[22px] p-4 md:p-6 shadow-[0_24px_50px_rgba(15,52,87,0.12)]">
@@ -28,18 +29,18 @@ function Specials() {
             to="/contact"
             className="inline-flex items-center gap-2 bg-brandblue hover:bg-brandblued text-white font-head font-bold text-[16px] rounded-[10px] px-7 py-3.5 transition-colors shadow-[0_8px_20px_rgba(28,111,176,0.28)]"
           >
-            Claim This Offer &;
+            Claim This Offer →
           </Link>
           <p className="mt-4 text-muted">
             Or call / text <a href="tel:7204548388" className="text-brandblue font-semibold">(720) 454-8388</a>
           </p>
         </div>
       </section>
-
+ 
       <Footer />
     </div>
   );
 }
-
+ 
 export default Specials;
 

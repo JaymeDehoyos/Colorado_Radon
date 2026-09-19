@@ -6,7 +6,7 @@ const Footer = () => {
     { type: "email", placeholder: "Email" },
     { type: "text", placeholder: "Address" },
   ];
-
+ 
   return (
     <footer className="bg-[#0b2740] text-[#c3d4e2] pt-16 pb-7">
       <div className="max-w-[1180px] mx-auto px-5 md:px-7 grid md:grid-cols-[1fr_1.4fr] gap-12">
@@ -22,7 +22,7 @@ const Footer = () => {
             <h4 className="text-white font-head font-bold text-[14px] tracking-[0.08em] uppercase mb-3">
               Hours
             </h4>
-            <p className="text-[15px]">Monday & Friday: 9AM & 5PM</p>
+            <p className="text-[15px]">Monday – Friday: 9AM – 5PM</p>
             <p className="text-[15px]">Saturday & Sunday: Closed</p>
           </div>
           <div className="mt-7">
@@ -34,7 +34,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
+ 
         {/* Contact form */}
         <div>
           <h4 className="text-white font-head font-bold text-[14px] tracking-[0.08em] uppercase mb-4">
@@ -63,10 +63,10 @@ const Footer = () => {
           </form>
         </div>
       </div>
-
+ 
       {/* Bottom bar */}
       <div className="max-w-[1180px] mx-auto px-5 md:px-7 mt-11 pt-6 border-t border-[#1d3d5a] flex flex-col md:flex-row justify-between items-center gap-2 text-[13.5px] text-[#8ba7c0]">
-        <p>& 2024 Colorado Radon Testing & All Rights Reserved</p>
+        <p>© 2024 Colorado Radon Testing — All Rights Reserved</p>
         <a
           href="https://jaymedehoyos.github.io"
           target="_blank"
@@ -79,7 +79,7 @@ const Footer = () => {
     </footer>
   );
 };
-
+ 
 export default Footer;
 
 
