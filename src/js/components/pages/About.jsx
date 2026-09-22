@@ -50,7 +50,7 @@ function About() {
               to="/contact"
               className="inline-flex items-center gap-2 bg-brandblue hover:bg-brandblued text-white font-head font-bold text-[15px] rounded-[10px] px-6 py-3 transition-colors shadow-[0_8px_20px_rgba(28,111,176,0.28)]"
             >
-              Schedule a Radon Test &rarr;
+              Schedule a Radon Test &
             </Link>
           </div>
         </div>
