@@ -56,11 +56,11 @@ function Home() {
             </h1>
             <p className="text-[18px] md:text-[18.5px] max-w-[520px] mb-7">
               Fast, certified radon testing for homeowners, buyers, and sellers across the Front
-              Range &mdash; with clear results in hours, not days.
+              Range & with clear results in hours, not days.
             </p>
             <div className="flex flex-wrap gap-3.5 mb-7">
               <Link to="/contact" className="inline-flex items-center gap-2 bg-brandblue hover:bg-brandblued text-white font-head font-bold text-[15px] rounded-[10px] px-5 py-3 transition-colors shadow-[0_8px_20px_rgba(28,111,176,0.28)]">
-                Schedule a Test &rarr;
+                Schedule a Test &
               </Link>
               <a href="tel:7204548388" className="inline-flex items-center gap-2 bg-white text-ink border-[1.5px] border-hairline hover:border-brandblue hover:text-brandblue font-head font-bold text-[15px] rounded-[10px] px-5 py-3 transition-colors">
                 Call (720) 454-8388
@@ -148,7 +148,7 @@ function Home() {
           <div className="text-center max-w-[660px] mx-auto mb-12">
             <span className="inline-flex items-center gap-2 bg-[#e2f1f0] text-[#0b7f7a] font-bold text-[12.5px] tracking-[0.06em] uppercase px-3.5 py-1.5 rounded-full mb-3.5">Reviews</span>
             <h2 className="font-head font-extrabold text-[30px] md:text-[36px] tracking-tight mb-3">Trusted by Colorado homeowners</h2>
-            <p className="text-[17px]">See what our clients say &mdash; straight from Google.</p>
+            <p className="text-[17px]">See what our clients say & straight from Google.</p>
           </div>
           <div className="grid md:grid-cols-[0.9fr_1.3fr] gap-6 items-stretch">
             {/* Summary card */}
@@ -160,7 +160,7 @@ function Home() {
               <div className="text-[#fbbc05] text-[24px] tracking-[3px] my-2">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
               <div className="text-muted text-[14.5px] mb-5">Rated 5.0 by our clients</div>
               <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-brandblue hover:bg-brandblued text-white font-head font-bold text-[15px] rounded-[10px] px-5 py-3 transition-colors">
-                Read all reviews on Google &rarr;
+                Read all reviews on Google &
               </a>
             </div>
             {/* Review cards */}
